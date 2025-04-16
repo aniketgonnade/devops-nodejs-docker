@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/aniketgonnade/devops-nodejs-docker.git'
+                git branch: 'main', url: 'https://github.com/aniketgonnade/devops-nodejs-docker.git'
             }
         }
 
